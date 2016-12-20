@@ -10,5 +10,6 @@ object TestLogs {
 
   def main(args: Array[String]): Unit = {
     logger.info("this world is full of crap people")
+    logger.debug("requestBody=<Damn></Damn>")
   }
 }
