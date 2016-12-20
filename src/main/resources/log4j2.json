@@ -1,0 +1,31 @@
+{
+  "configuration": {
+    "name": "log-enrichment",
+    "appenders": {
+      "RollingFile": {
+        "name": "rollingFile",
+        "fileName": "enrichment.log",
+        "filePattern": "%d{MM-dd-yy-HH-mm-ss}-%i.log",
+        "CustomJSONLayout": {
+          "complete": false,
+          "compact": true,
+          "eventEol": true
+        },
+        "SizeBasedTriggeringPolicy": {
+          "size": "1 KB"
+        },
+        "DefaultRolloverStrategy": {
+          "max": "5"
+        }
+      }
+    },
+    "loggers": {
+      "root": {
+        "level": "DEBUG",
+        "appender-ref": {
+          "ref": "rollingFile"
+        }
+      }
+    }
+  }
+}

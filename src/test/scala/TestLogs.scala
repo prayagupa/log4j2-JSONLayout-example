@@ -1,15 +1,19 @@
 import org.apache.logging.log4j.LogManager
+import org.scalatest.FunSuite
 
 /**
   * Created by prayagupd
   * on 12/20/16.
   */
 
-object TestLogs {
+class TestLogs extends FunSuite {
+
   val logger =  LogManager.getLogger("fhkajgh")
 
-  def main(args: Array[String]): Unit = {
+  test("shfdkj"){
     logger.info("this world is full of crap people")
     logger.debug("requestBody=<Damn></Damn>")
+
+    assert(1 == 1)
   }
 }
