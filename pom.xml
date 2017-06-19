@@ -24,8 +24,8 @@
     <dependencies>
 
         <dependency>
-            <groupId>net.json.log4j2</groupId>
-            <artifactId>log4j2-jsonlayout</artifactId>
+            <groupId>com.log4j2.jsonised</groupId>
+            <artifactId>log4j2-jsonised</artifactId>
             <version>1.0.0</version>
         </dependency>
 
@@ -78,6 +78,13 @@
             <groupId>org.pegdown</groupId>
             <artifactId>pegdown</artifactId>
             <version>1.6.0</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.scalatest</groupId>
+            <artifactId>scalatest_2.11</artifactId>
+            <version>3.0.0</version>
             <scope>test</scope>
         </dependency>
 
